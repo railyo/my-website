@@ -81,3 +81,37 @@ div:has(h2) {
   0% { background-position: 0% center; }
   100% { background-position: -200% center; }
 }
+
+/*flex box add to be commented out until added to its own page  
+#memes-content {
+  display: ;
+}
+*/
+#memes-content {
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+#memes-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  
+}
+#memes-gallery img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} 
+#memes-gallery img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  transform: translateY(-8px) scale(1.03); 
+  
+  /* 2. Create the outer glowing boundary */
+  box-shadow: 0 0 20px 5px rgba(0, 212, 255, 0.6),  /* Soft bright aura */
+              0 0 40px 10px rgba(0, 212, 255, 0.3);
+}
+}
