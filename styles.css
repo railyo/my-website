@@ -4,15 +4,18 @@ body {
   padding: auto;
   margin: auto;
   justify-content: center;
-}
-#main-header { 
-  text-align: center; 
-  display: flex;
-  justify-content: center;
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  min-height: 100vh; 
+  margin: 0;
 }
 
 header {
   background-color: #800080;
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 h1 #sparkle-text { 
@@ -28,7 +31,15 @@ h1 #sparkle-text {
   color: transparent; 
   animation: sparkleMove 2.5s linear infinite; 
 }
+div {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  border-style: dashed;
 
+}
 #meet-asha ul {
     list-style-type: '♥ '; 
     justify-content: center;
@@ -64,33 +75,45 @@ div:has(h2) {
 
 .btn-primary{
     background-color: #93f403;
+    font-family: 'Courier New', Courier, monospace;
 }
+
+footer a {
+  display: flex;
+  justify-content: center;
+  }
 
 @keyframes sparkleMove {
   0% { background-position: 0% center; }
   100% { background-position: -200% center; }
 }
+/* meme styling */
 
-/*flex box add to be commented out until added to its own page  
 #memes-content {
-  display: ;
+  display: grid;
+  grid-template-columns: 10% 1fr;
+  gap: 20px;
+  align-items: start;
+  padding: 40px 20px;
 }
-*/
-#memes-content {
-  border: 1px solid #ccc;
-  padding: 1rem;
-}
+
 #memes-gallery {
-  display: flex;
+  margin-bottom: 0px;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
   gap: 1rem;
+  padding-top: 10px;
   
 }
+#memes-text {
+  position: -webkit-sticky;
+  position: sticky;
+  align-self: start;
+  top: 20px;
+  padding: 10px;
+
+}
 #memes-gallery img {
-  max-width: 100%;
-  height: auto;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 } 
@@ -98,9 +121,7 @@ div:has(h2) {
   transform: scale(1.05);
   transition: transform 0.3s ease;
   transform: translateY(-8px) scale(1.03); 
-  
-  /* 2. Create the outer glowing boundary */
-  box-shadow: 0 0 20px 5px rgba(0, 212, 255, 0.6),  /* Soft bright aura */
+   box-shadow: 0 0 20px 5px rgba(0, 212, 255, 0.6),  /* Soft bright aura */
               0 0 40px 10px rgba(0, 212, 255, 0.3);
 }
 }
