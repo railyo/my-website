@@ -17,7 +17,7 @@ header {
   font-size: 1.5rem;
   font-weight: bold;
 }
-
+/* index/home page styling */
 h1 #sparkle-text { 
   display: flex;
   justify-content: center;
@@ -31,6 +31,7 @@ h1 #sparkle-text {
   color: transparent; 
   animation: sparkleMove 2.5s linear infinite; 
 }
+
 div {
   display: flex;
   justify-content: center;
@@ -40,10 +41,11 @@ div {
   border-style: dashed;
 
 }
+
 #meet-asha ul {
     list-style-type: '♥ '; 
     justify-content: center;
-  }
+}
 
 #meet-asha ul:hover {
   text-transform: uppercase;
@@ -83,11 +85,20 @@ footer a {
   justify-content: center;
   }
 
+footer h3 {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #fff;
+  background-color: #800080;
+  padding: 1rem;
+  margin-top: 2rem;
+}
 @keyframes sparkleMove {
   0% { background-position: 0% center; }
   100% { background-position: -200% center; }
 }
-/* meme styling */
+
+/* meme page styling */
 
 #memes-content {
   display: grid;
@@ -124,4 +135,92 @@ footer a {
    box-shadow: 0 0 20px 5px rgba(0, 212, 255, 0.6),  /* Soft bright aura */
               0 0 40px 10px rgba(0, 212, 255, 0.3);
 }
+
+/* travel page styling */
+/*creates a responsive intro section for travel page, stacks until 768px, scalable image */
+
+#intro-travel {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px;
+  width: 100%;
+  border: none;
+}
+
+.intro-image-wrapper img {
+  width: 100%;
+  max-width: 600px;
+  max-height: auto;
+  display: block;  
+}
+/* doggies page styling */
+
+
+/* selfies page styling */
+#selfies-content {
+  display: grid;
+  grid-template-columns: 10% 1fr;
+  gap: 20px;
+  align-items: start;
+  padding: 40px 20px;
+}
+
+#selfies-gallery {
+  margin-bottom: 0px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1rem;
+  padding-top: 10px;
+
+}
+
+#selfies-text {
+  position: -webkit-sticky;
+  position: sticky;
+  align-self: start;
+  top: 20px;
+  padding: 10px;
+
+}
+#selfies-gallery img {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#selfies-gallery img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 0 20px 5px rgba(0, 212, 255, 0.6),  /* Soft bright aura */
+              0 0 40px 10px rgba(0, 212, 255, 0.3);
+}
+
+
+@media screen and (min-width: 768px) {
+  /*vertically stacks intro waterfall image and text for smoother reading on smaller screens, side by side at 768px*/
+  #intro-travel {
+    flex-direction: row;    
+    align-items: center;        
+    justify-content: flex-start;
+    border: none;
+  }
+
+  .intro-image-wrapper {
+    flex: 0 0 75%; 
+    max-width: 75%;
+    border: none;
+  }
+
+  .intro-text-wrapper {
+    flex: 0 0 20%;
+    max-width: 20%;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+/*stacks meme text containers for improved readability until splitting off to the side for fixed scrolling at 1000px*/
+  #memes-content {
+  display: flex;
+}
+
 }

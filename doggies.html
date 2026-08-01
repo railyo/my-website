@@ -50,31 +50,29 @@
 <!-- link to dogs page -->
 <a href="doggies.html">
 <button class="btn-primary">doggies</button>
-</a> <br>
-this page is about asha and i making travel plans for the future</header>
-
-
-<main>
-  <div id="travel-content">
-    <h2 id="travel">Travel Adventures</h2>
-<!-- intro section container-->
-    <div id="intro-travel">   
-<!-- just the waterfall img-->
-  <div class="intro-image-wrapper"> 
-    <img src="images/waterfalls.webp" alt="sul doc falls waterfall">
+</a> 
+<br>
+these are our doggies
+</header>
+    <!-- here will go a photo collection of our pets-->
+    <div class="pet-photos">
+        <img src="dog1.jpg" alt="Dog 1">
+        <img src="dog2.jpg" alt="Dog 2">
+        <img src="dog3.jpg" alt="Dog 3">
     </div>
-  <div class="intro-text-wrapper">
-    <p>Welcome to our travel adventures page! Here, we share our exciting plans for future trips, the places we dream of visiting, and the experiences we hope to have together. From breathtaking landscapes to cultural explorations, our journey is filled with anticipation and joy. Join us as we embark on this adventure, capturing memories and creating stories that will last a lifetime.</p>
-  filler text about traveling, places we will go and future plans to scale with waterfall image. the waterfall is sul doc falls.</div>
-  </div>
+    <!-- this links to the input below --> 
+    <div><p><a href="#petName">do you have any pets?</a></p> 
+    
+    <section class="pet-section"> 
+        <h2>tell us your pet's name(s) below!</h2> 
+        <form action="/submit-pet-endpoint" method="POST">
+            <div class="form-group"> 
+                <label for="petName">pet's name:</label> 
+                <input type="text" id="petName" name="pet_name" placeholder="e.g., Mr. Snuggles" required> 
+            </div> 
+            <button type="submit" class="submit-btn">Submit Name</button>
+        </form>
+    </section> 
 </div>
-  <div id="travel-gallery">
-    <!-- Images or content for travel will go here -->
-    <img src="images/travel2.jpg" alt="Travel 2" width="400" height="400">
-    <img src="images/travel3.jpg" alt="Travel 3" width="400" height="400">
-    <img src="images/travel4.jpg" alt="Travel 4" width="400" height="400">
-    <img src="images/travel5.jpg" alt="Travel 5" width="400" height="400">
-  </div>
-</main>
 </body>
 </html>
