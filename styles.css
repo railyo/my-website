@@ -1,6 +1,5 @@
 body {
   font-family: 'Courier New', Courier, monospace;
-  display: inline;
   padding: auto;
   margin: auto;
   justify-content: center;
@@ -10,6 +9,8 @@ body {
 }
 
 header {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
   background-color: #800080;
   text-align: center;
   padding: 1rem;
@@ -140,11 +141,12 @@ footer h3 {
 /*creates a responsive intro section for travel page, stacks until 768px, scalable image */
 
 #intro-travel {
-  display: flex;
-  flex-direction: column; 
+  display: grid;
+  grid-template-columns: 70% 30%; 
   gap: 20px;
   width: 100%;
   border: none;
+  padding-bottom: 5em;
 }
 
 .intro-image-wrapper img {
@@ -158,7 +160,7 @@ footer h3 {
 
 /* selfies page styling */
 #selfies-content {
-  display: grid;
+  display: flex;
   grid-template-columns: 10% 1fr;
   gap: 20px;
   align-items: start;
@@ -196,6 +198,8 @@ footer h3 {
 
 
 @media screen and (min-width: 768px) {
+  
+  
   /*vertically stacks intro waterfall image and text for smoother reading on smaller screens, side by side at 768px*/
   #intro-travel {
     flex-direction: row;    
@@ -217,10 +221,39 @@ footer h3 {
   }
 }
 
+/* vertical nav bar till wider width*/
+@media screen and (max-width:600px){
+  header {
+  display: flex;
+  flex-direction: column;
+}
+}
+@media screen and (min-width: 1000px){
+/* puts jimothy inline with meet asha section*/
+  .asha-jimothy {
+    display: grid;
+    grid-template-columns: 75% 25%;
+  }
+/*adjusts photos and text to be in line at a larger screen size*/
+ #travel-gallery {
+  display: grid;
+  grid-template-columns: 40% 60%;
+ }
+/* adjusts photos and text to be in line at a larger size*/
+.pet-photos {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+}
 @media screen and (max-width: 1000px) {
 /*stacks meme text containers for improved readability until splitting off to the side for fixed scrolling at 1000px*/
   #memes-content {
   display: flex;
+  
+}
+/* removes meme text until 1000px for ease of looking at page - text feels too busy at smaller width*/
+#memes-text {
+  display: none;
+}
 }
 
-}
