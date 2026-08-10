@@ -201,44 +201,44 @@ footer h3 {
   
   
   /*vertically stacks intro waterfall image and text for smoother reading on smaller screens, side by side at 768px*/
-  #intro-travel {
-    flex-direction: row;    
-    align-items: center;        
-    justify-content: flex-start;
-    border: none;
+#intro-travel {
+  flex-direction: row;    
+  align-items: center;        
+  justify-content: flex-start;
+  border: none;
   }
 
-  .intro-image-wrapper {
-    flex: 0 0 75%; 
-    max-width: 75%;
-    border: none;
+.intro-image-wrapper {
+  flex: 0 0 75%; 
+  max-width: 75%;
+  border: none;
   }
 
-  .intro-text-wrapper {
-    flex: 0 0 20%;
-    max-width: 20%;
-    border: none;
+.intro-text-wrapper {
+  flex: 0 0 20%;
+  max-width: 20%;
+  border: none;
   }
 }
 
 /* vertical nav bar till wider width*/
 @media screen and (max-width:600px){
-  header {
+header {
   display: flex;
   flex-direction: column;
 }
 }
 @media screen and (min-width: 1000px){
 /* puts jimothy inline with meet asha section*/
-  .asha-jimothy {
-    display: grid;
-    grid-template-columns: 75% 25%;
+.asha-jimothy {
+  display: grid;
+  grid-template-columns: 75% 25%;
   }
 /*adjusts photos and text to be in line at a larger screen size*/
- #travel-gallery {
+#travel-gallery {
   display: grid;
   grid-template-columns: 40% 60%;
- }
+}
 /* adjusts photos and text to be in line at a larger size*/
 .pet-photos {
   display: grid;
