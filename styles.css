@@ -156,6 +156,28 @@ footer h3 {
   display: block;  
 }
 /* doggies page styling */
+#pet-photos-wrapper {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+}
+#pet-photos-wrapper img {
+  flex: 1;
+  width: 100%;
+  height: 400px;
+}
+.stella .whisky .sasha {
+  
+}
+.circle-dogs {
+  /*matching width and height */
+  width: 300px;
+  height: 300px;
+  /*Crop the square into a perfect circle */
+  border-radius: 50%;
+  object-fit: cover;
+  object-offset: center; 
+}
 
 
 /* selfies page styling */
