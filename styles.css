@@ -100,7 +100,10 @@ div:has(h2) {
     font-family: 'Courier New', Courier, monospace;
     font-size: large;
 }
-
+footer {
+  text-align: center;
+  font-family: "silkscreen", sans-serif;
+}
 footer a {
   display: flex;
   justify-content: center;
