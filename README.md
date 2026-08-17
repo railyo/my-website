@@ -17,3 +17,12 @@ Why are nested selectors more useful than global styling? Having precision in ho
 One selector that felt especially powerful: :hover is very dynamic to me, and a lot of fun!
 
 One selector that took time to understand: considering descendants took some time
+
+Peer Review updates: 
+
+Removed white box in travel adventures: limited to text in intro for ease of reading. 
+Capitalized Asha in Jimothy section.
+Added name and year to footer.
+On travel page, added padding and margin so text didn't butt up to edge of page.
+In Jimothy section, removed irrelevant h3 tag.
+Increased font size of nav bar buttons. 

@@ -1,3 +1,21 @@
+.silkscreen-regular {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.silkscreen-bold {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.alata-regular {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   font-family: 'Courier New', Courier, monospace;
   padding: auto;
@@ -31,7 +49,9 @@ h1 #sparkle-text {
   -webkit-text-fill-color: transparent; 
   color: transparent; 
   animation: sparkleMove 2.5s linear infinite; 
+  font-family: "Silkscreen", sans-serif;
 }
+
 
 div {
   display: flex;
@@ -40,7 +60,7 @@ div {
   align-items: center;
   flex-direction: column;
   border-style: dashed;
-
+  font-family: "Alata", sans-serif;
 }
 
 #meet-asha ul {
@@ -64,7 +84,6 @@ ul ol li {
 }
 
 div:has(h2) {
-    background-color: #f0f0f0;
     padding: .0625rem;
     border-radius: .03125rem;
 }
@@ -79,6 +98,7 @@ div:has(h2) {
 .btn-primary{
     background-color: #93f403;
     font-family: 'Courier New', Courier, monospace;
+    font-size: large;
 }
 
 footer a {
@@ -104,9 +124,9 @@ footer h3 {
 #memes-content {
   display: grid;
   grid-template-columns: 10% 1fr;
-  gap: 20px;
+  gap: 0px;
   align-items: start;
-  padding: 40px 20px;
+  padding: 10px 10px;
 }
 
 #memes-gallery {
@@ -140,20 +160,28 @@ footer h3 {
 /* travel page styling */
 /*creates a responsive intro section for travel page, stacks until 768px, scalable image */
 
+.travel {
+ 
+}
 #intro-travel {
   display: grid;
-  grid-template-columns: 70% 30%; 
+  grid-template-columns: 65% 30%; 
   gap: 20px;
-  width: 100%;
+  width: 90%;
   border: none;
-  padding-bottom: 5em;
 }
 
 .intro-image-wrapper img {
   width: 100%;
-  max-width: 600px;
-  max-height: auto;
+  max-width: 500px;
+  max-height: 90%;
   display: block;  
+}
+
+.intro-text-wrapper {
+  background-color: #fff;
+  padding: .5em;
+  margin: .5em;
 }
 /* doggies page styling */
 #pet-photos-wrapper {
@@ -229,17 +257,13 @@ footer h3 {
   justify-content: flex-start;
   border: none;
   }
-
-.intro-image-wrapper {
-  flex: 0 0 75%; 
-  max-width: 75%;
-  border: none;
-  }
-
-.intro-text-wrapper {
-  flex: 0 0 20%;
-  max-width: 20%;
-  border: none;
+}
+#travel {
+  text-align: center;
+}
+@media screen and (max-width:600px){
+  #meme.gallery img {
+    width: 75%;
   }
 }
 
@@ -250,7 +274,7 @@ header {
   flex-direction: column;
 }
 }
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 900px){
 /* puts jimothy inline with meet asha section*/
 .asha-jimothy {
   display: grid;
@@ -260,6 +284,9 @@ header {
 #travel-gallery {
   display: grid;
   grid-template-columns: 40% 60%;
+}
+.intro-image-wrapper {
+  border-style: none;
 }
 /* adjusts photos and text to be in line at a larger size*/
 .pet-photos {
