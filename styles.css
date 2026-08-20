@@ -98,7 +98,7 @@ div:has(h2) {
 .btn-primary{
     background-color: #93f403;
     font-family: 'Courier New', Courier, monospace;
-    font-size: large;
+    font-size: 1rem;
 }
 footer {
   text-align: center;
@@ -163,9 +163,6 @@ footer h3 {
 /* travel page styling */
 /*creates a responsive intro section for travel page, stacks until 768px, scalable image */
 
-.travel {
- 
-}
 #intro-travel {
   display: grid;
   grid-template-columns: 65% 30%; 
@@ -197,9 +194,7 @@ footer h3 {
   width: 100%;
   height: 400px;
 }
-.stella .whisky .sasha {
-  
-}
+
 .circle-dogs {
   /*matching width and height */
   width: 300px;
@@ -209,7 +204,6 @@ footer h3 {
   object-fit: cover;
   object-offset: center; 
 }
-
 
 /* selfies page styling */
 #selfies-content {
@@ -277,7 +271,7 @@ header {
   flex-direction: column;
 }
 }
-@media screen and (min-width: 900px){
+@media screen and (min-width: 1300px){
 /* puts jimothy inline with meet asha section*/
 .asha-jimothy {
   display: grid;
@@ -297,11 +291,27 @@ header {
   grid-template-columns: 60% 40%;
 }
 }
+
+@media screen and (min-width: 2000px){
+  .travel-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    border-style: none;
+  }
+  #travel-table {
+  display: block;
+  width: 100%;
+  border-style: none;
+  }
+  #travel-table table {
+  margin: 0 auto;
+  width: 50%;
+}
+}
 @media screen and (max-width: 1000px) {
 /*stacks meme text containers for improved readability until splitting off to the side for fixed scrolling at 1000px*/
   #memes-content {
   display: flex;
-  
 }
 /* removes meme text until 1000px for ease of looking at page - text feels too busy at smaller width*/
 #memes-text {
